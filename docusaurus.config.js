@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/nbkparks-community/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'https://nbkparks.org/wp-content/themes/NBKPA-wp_v2.8.7/favicon/favicon-32x32.png',
   organizationName: 'nbkparks', // Usually your GitHub org/user name.
   projectName: 'nbkparks-community', // Usually your repo name.
 
