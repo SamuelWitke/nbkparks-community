@@ -55,7 +55,7 @@ const config = {
             position: 'left',
             label: 'Open Garden Day Info',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: 'Community Board', position: 'left'},
           {
             href: 'https://github.com/SamuelWitke/nbkparks-community',
             label: 'GitHub',
