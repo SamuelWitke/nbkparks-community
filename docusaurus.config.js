@@ -21,7 +21,10 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        //googleAnalytics: "G-VR9SXWEQ58",
+         googleAnalytics: {
+              trackingID: 'G-VR9SXWEQ58',
+              anonymizeIP: true,
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
