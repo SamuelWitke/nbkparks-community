@@ -21,6 +21,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        //googleAnalytics: "G-VR9SXWEQ58",
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
@@ -38,7 +39,52 @@ const config = {
       }),
     ],
   ],
-
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        blogSidebarCount: 'ALL',
+        id: 'gardens',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'gardens',
+        blogSidebarTitle: 'All Gardens',
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: './gardens/',
+        editUrl:
+          'https://github.com/SamuelWitke/nbkparks-community/edit/main/',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        postsPerPage: "ALL",
+        id: 'getting-started',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'getting-started',
+        blogSidebarTitle: 'How To & Contributing',
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: './how-to&contributing',
+        editUrl:
+          'https://github.com/SamuelWitke/nbkparks-community/edit/main/',
+      },
+    ],
+  ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -53,12 +99,14 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Open Garden Day Info',
+            label: '🎉 Events',
           },
-          {to: '/blog', label: 'Community Board', position: 'left'},
+          { to: '/gardens', label: '🏡 Gardens', position: 'left' },
+          { to: '/blog', label: '📋 Community Board', position: 'left' },
+          { to: '/getting-started', label: 'Getting Started 🚀', position: 'right' },
           {
             href: 'https://github.com/SamuelWitke/nbkparks-community',
-            label: 'GitHub',
+            label: 'Source',
             position: 'right',
           },
         ],
@@ -79,16 +127,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Community Board',
+                to: '/blog',
               },
             ],
           },
@@ -106,7 +146,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} nbkparks-community. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
