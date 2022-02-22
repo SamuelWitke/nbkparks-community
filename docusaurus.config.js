@@ -22,7 +22,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
          googleAnalytics: {
-              trackingID: 'G-VR9SXWEQ58',
+              trackingID: 'UA-221091127-2',
               anonymizeIP: true,
         },
         docs: {
