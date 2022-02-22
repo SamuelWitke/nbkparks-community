@@ -9,7 +9,7 @@ import Scholes from '../gardens/Scholes-st.mdx'
 import Sunshine from '../gardens/Sunshine-Community.mdx'
 import KeapFourth from '../gardens/Keap-fourth.mdx'
 import ElPuente from '../gardens/El_Puente.mdx'
-import BerrySt from '../gardens/Berry-St1.mdx'
+import BerrySt from '../gardens/Berry-St.mdx'
 import Map from '../src/components/Map'
 
 <Map imagePath={'/map.svg'}>
