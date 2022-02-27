@@ -68,8 +68,6 @@ const FeatureList = [
 
 
 function Feature({ imageIdx, title, description }) {
-  const { siteConfig } = useDocusaurusContext();
-  console.log(siteConfig)
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
