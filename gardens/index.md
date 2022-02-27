@@ -1,22 +1,20 @@
 ---
+title:  How To Add A Garden Page
 sidebar_position: 1
 ---
 
-# How To Add An Event 
+# 👨‍🌾 How To Add A Garden Page  👩‍🌾 
 
-Docusaurus creates a **page for each blog post**, but also a **blog index page**, a **tag system**, an **RSS** feed...
+This website makes a **page for each file**, but also a **index page**, a **tag system**, an **RSS** feed...
 
-## Create your first Post
-
-Create a file at `docs/greetings.md`:
-
-
+## Add A New Garden 🌱‍🌾🌿🌷☘️🌻🍊🍅🥒🐌🍆🌹
+Create a file at `gardens/NameOfGarden.md`:
 
 Congratulations, you have made your first post!
 
 Feel free to play around and edit this post as much you like.
 
-A new blog post is now available at `/event/greetings`.
+A new blog post is now available at `/gardens/greetings`.
 
 # Markdown Features
 
@@ -48,6 +46,9 @@ Regular Markdown links are supported, using url paths or relative file paths.
 ```md
 Let's see how to [Create a page](/intro).
 ```
+
+
+**Result:** Let's see how to [Create a page](./intro.mdx).
 
 
 **Result:** Let's see how to [Create a page](./intro.mdx).

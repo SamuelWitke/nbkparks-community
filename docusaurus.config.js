@@ -21,12 +21,13 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-         googleAnalytics: {
-              trackingID: 'UA-221091127-2',
-              anonymizeIP: true,
+        googleAnalytics: {
+          trackingID: 'UA-221091127-2',
+          anonymizeIP: true,
         },
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: "events",
+          path: "events",
           // Please change this to your repo.
           editUrl: 'https://github.com/SamuelWitke/nbkparks-community/edit/main/',
         },
@@ -44,19 +45,17 @@ const config = {
   ],
   plugins: [
     [
-      '@docusaurus/plugin-content-blog',
+      '@docusaurus/plugin-content-docs',
       {
         /**
          * Required for any multi-instance plugin
          */
-        blogSidebarCount: 'ALL',
         id: 'gardens',
         /**
          * URL route for the blog section of your site.
          * *DO NOT* include a trailing slash.
          */
         routeBasePath: 'gardens',
-        blogSidebarTitle: 'All Gardens',
         /**
          * Path to data on filesystem relative to site dir.
          */
