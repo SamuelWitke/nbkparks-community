@@ -12,49 +12,6 @@ function shuffle(array) {
   }
   return array;
 }
-const [one, two, three] = shuffle(Array.from(Array(10).keys()));
-const FeatureList = [
-  {
-    imageIdx: one,
-    title: 'Open Sourced Project',
-    description: (
-      <>
-        <code> This is an open-sourced project.
-        </code>
-        <p>
-          Want to learn more about how to contribute and use to open source?
-          Checkout <a href='https://opensource.guide/how-to-contribute/'>
-            How to Contribute to Open Source
-          </a>
-        </p>
-      </>
-    ),
-  },
-  {
-    imageIdx: two,
-    title: 'Share Info & Updates with Gardeners',
-    description: (
-      <p>
-        <code>open-sourced</code> means that the backend is avaialbe to the public to view in the
-        {" "}
-        <a href='https://github.com/SamuelWitke/nbkparks-community'>
-          source link.
-        </a>
-        If you want to make a update checkout the guides on each tab.
-      </p>
-    ),
-  },
-  {
-    imageIdx: three,
-    title: 'Built with Docusaurus',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React.<a href="https://docusaurus.io/">Docusaurus </a>can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
-]
 
 function Feature({ imageIdx, title, description }) {
   return (
@@ -73,8 +30,49 @@ function Feature({ imageIdx, title, description }) {
 
 
 export default function HomepageFeatures() {
-
-
+  const [one, two, three] = shuffle(Array.from(Array(12).keys()));
+  const FeatureList = [
+    {
+      imageIdx: one,
+      title: 'Open Sourced Project',
+      description: (
+        <>
+          <code> This is an open-sourced project.
+          </code>
+          <p>
+            Want to learn more about how to contribute and use to open source?
+            Checkout <a href='https://opensource.guide/how-to-contribute/'>
+              How to Contribute to Open Source
+            </a>
+          </p>
+        </>
+      ),
+    },
+    {
+      imageIdx: two,
+      title: 'Share Info & Updates with Gardeners',
+      description: (
+        <p>
+          <code>open-sourced</code> means that the backend is avaialbe to the public to view in the
+          {" "}
+          <a href='https://github.com/SamuelWitke/nbkparks-community'>
+            source link.
+          </a>
+          If you want to make a update checkout the guides on each tab.
+        </p>
+      ),
+    },
+    {
+      imageIdx: three,
+      title: 'Built with Docusaurus',
+      description: (
+        <>
+          Extend or customize your website layout by reusing React.<a href="https://docusaurus.io/">Docusaurus </a>can
+          be extended while reusing the same header and footer.
+        </>
+      ),
+    },
+  ]
   return (
     <>
       <section className={styles.features}>

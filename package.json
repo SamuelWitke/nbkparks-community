@@ -41,5 +41,10 @@
   "devDependencies": {
     "commitizen": "^4.2.4",
     "husky": "^7.0.4"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
