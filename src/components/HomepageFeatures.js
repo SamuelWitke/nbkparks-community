@@ -2,7 +2,6 @@ import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
 
-
 function shuffle(array) {
   let currentIndex = array.length, randomIndex;
   while (currentIndex != 0) {
@@ -13,7 +12,7 @@ function shuffle(array) {
   }
   return array;
 }
-const [one, two, three] = shuffle([...Array(12).keys()])
+const [one, two, three] = shuffle(Array.from(Array(10).keys()));
 const FeatureList = [
   {
     imageIdx: one,
@@ -37,7 +36,7 @@ const FeatureList = [
     description: (
       <p>
         <code>open-sourced</code> means that the backend is avaialbe to the public to view in the
-      {" "}
+        {" "}
         <a href='https://github.com/SamuelWitke/nbkparks-community'>
           source link.
         </a>
@@ -52,12 +51,10 @@ const FeatureList = [
       <>
         Extend or customize your website layout by reusing React.<a href="https://docusaurus.io/">Docusaurus </a>can
         be extended while reusing the same header and footer.
-        
       </>
     ),
   },
 ]
-
 
 function Feature({ imageIdx, title, description }) {
   return (
@@ -73,7 +70,11 @@ function Feature({ imageIdx, title, description }) {
   );
 }
 
+
+
 export default function HomepageFeatures() {
+
+
   return (
     <>
       <section className={styles.features}>
