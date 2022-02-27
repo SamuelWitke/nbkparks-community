@@ -10,13 +10,9 @@
 [![Public Domain](https://img.shields.io/badge/public-domain-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 -----
 Our mission is to create an equitable, accessible, and vibrant parks & open space system in North Brooklyn.
-----
-----
-This project was created following the tutorial in this article 
-https://tympanus.net/codrops/2015/12/16/animated-map-path-for-interactive-storytelling/
+---
 
-
-<a target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NmFxMmg3aHVkdmQ4OWoya2l2MHAyZHRqNzcgd2l0a2VzYW1AbQ&amp;tmsrc=witkesam%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
+<a target="_blank" href="https://calendar.google.com/event?tmeid=NmFxMmg3aHVkdmQ4OWoya2l2MHAyZHRqNzcgd2l0a2VzYW1AbQ&amp;tmsrc=witkesam%40gmail.com"><img border="0" src="https://www.google.com/calendar/images/ext/gc_button1_en.gif"></a>
 
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
