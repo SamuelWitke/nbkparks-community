@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunknbkparks_community=self.webpackChunknbkparks_community||[]).push([[180],{1403:function(s){s.exports=JSON.parse('{"allTagsPath":"/nbkparks-community/gardens/tags","slug":"/nbkparks-community/gardens/tags/docusaurus","name":"docusaurus","count":1,"permalink":"/nbkparks-community/gardens/tags/docusaurus"}')}}]);
