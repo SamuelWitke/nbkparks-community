@@ -119,7 +119,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Events',
             items: [
               {
                 label: 'Open Garden Day Info',
@@ -150,7 +150,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} nbkparks-community. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} nbkparks-community`,
       },
       prism: {
         theme: lightCodeTheme,

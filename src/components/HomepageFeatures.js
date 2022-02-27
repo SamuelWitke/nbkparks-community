@@ -1,45 +1,79 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './HomepageFeatures.module.css';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
+
+function shuffle(array) {
+  let currentIndex = array.length, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (currentIndex != 0) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
+
+    // And swap it with the current element.
+    [array[currentIndex], array[randomIndex]] = [
+      array[randomIndex], array[currentIndex]];
+  }
+
+  return array;
+}
+const [one, two, three] = shuffle([...Array(12).keys()])
 const FeatureList = [
   {
-    title: 'This Project Uses docusaurus',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    imageIdx: one,
+    title: 'Open Sourced Project',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <code> This is an open-sourced project.
+        </code>
+        <p>
+          Want to learn more about how to contribute and use to open source?
+          Checkout <a href='https://opensource.guide/how-to-contribute/'>
+            How to Contribute to Open Source
+          </a>
+        </p>
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    imageIdx: two,
+    title: 'Share Info & Updates with Gardeners',
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+      <p>
+        <code>open-sourced</code> means that the backend is avaialbe to the public to view in the
+      {" "}
+        <a href='https://github.com/SamuelWitke/nbkparks-community'>
+          source link.
+        </a>
+        If you want to make a update checkout the guides on each tab.
+      </p>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    imageIdx: three,
+    title: 'Built with Docusaurus',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
+        Extend or customize your website layout by reusing React.<a href="https://docusaurus.io/">Docusaurus </a>can
         be extended while reusing the same header and footer.
+        
       </>
     ),
   },
-];
+]
 
-function Feature({Svg, title, description}) {
+
+function Feature({ imageIdx, title, description }) {
+  const { siteConfig } = useDocusaurusContext();
+  console.log(siteConfig)
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} alt={title} />
+        <img src={require(`@site/static/urban-gardener/${imageIdx}.png`).default} />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
@@ -51,14 +85,25 @@ function Feature({Svg, title, description}) {
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
-      <div className="container">
+    <>
+      <section className={styles.features}>
+        <div className="container">
+          <div className="row">
+            {FeatureList.map((props, idx) => (
+              <Feature key={idx} {...props} />
+            ))}
+          </div>
+        </div>
+      </section>
+      <div >
         <div className="row">
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
-          ))}
+          <div className='col'></div>
+          <div className='col'></div>
+          <div className='col'>
+            <p> > Images sourced from <a href='https://tympanus.net/codrops/author/mlangella/'>Manuela Langella</a> </p>
+          </div>
         </div>
       </div>
-    </section>
+    </>
   );
 }
