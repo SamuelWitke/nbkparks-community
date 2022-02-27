@@ -5,7 +5,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
-function rand() { return Math.floor(Math.random() * 90) };
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
