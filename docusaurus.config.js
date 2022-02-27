@@ -103,7 +103,9 @@ const config = {
             position: 'left',
             label: '🎉 Events',
           },
-          { to: '/gardens', label: '🏡 Gardens', position: 'left' },
+          { to: '/gardens', 
+            docId: 'index',
+          label: '🏡 Gardens', position: 'left' },
           { to: '/blog', label: '📋 Community Board', position: 'left' },
           { to: '/getting-started', label: 'Getting Started 🚀', position: 'right' },
           {
@@ -121,7 +123,7 @@ const config = {
             items: [
               {
                 label: 'Open Garden Day Info',
-                to: '/docs/intro',
+                to: '/events/intro',
               },
             ],
           },

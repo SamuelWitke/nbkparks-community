@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+function rand() { return Math.floor(Math.random() * 90) };
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -16,7 +17,7 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
+            to="/events/intro">
                 This is a gardener led project 🌱🌳
           </Link>
         </div>
